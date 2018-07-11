@@ -83,7 +83,7 @@ for row in cur.fetchall():
                 totalPhoneNumbers+=1
                 phoneLog.write(number+"\n")
                 print("\tPhone: "+number) 
-        except:
+        except Exception as e:
             print("Invalid Phone Number: "+str(e))
 
     for ip in ips:
